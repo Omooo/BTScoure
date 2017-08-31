@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:descendantFocusability="blocksDescendants"
+              android:layout_height="60dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+        <TextView
+            android:id="@+id/item_Color"
+            android:background="#FF6666"
+            android:layout_width="10dp"
+            android:layout_height="60dp"/>
+        <TextView
+            android:id="@+id/item_Title"
+            android:text="Title"
+            android:maxLines="1"
+            android:textSize="20sp"
+            android:layout_toRightOf="@+id/item_Color"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"/>
+        <TextView
+            android:id="@+id/item_Date"
+            android:text="收录时间：2017-08-02          "
+            android:textSize="15sp"
+            android:layout_toRightOf="@+id/item_Color"
+            android:layout_below="@+id/item_Title"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"/>
+        <TextView
+            android:id="@+id/item_Size"
+            android:text="资源大小：100M"
+            android:textSize="15sp"
+            android:layout_toEndOf="@+id/item_Date"
+            android:layout_below="@+id/item_Title"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"/>
+    </RelativeLayout>
+
+</LinearLayout>
